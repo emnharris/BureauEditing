@@ -4,17 +4,15 @@ Dim StrFind As String
 Dim StrRepl As String
 Dim i As Long
 
-' In StrFind and StrRepl, add words between the quote marks, separate with a comma, NO spaces
-' To only highlight the found words (i.e. not replace with other words), either use StrRepl = StrFind OR use the SAME words in the same order in the StrRepl list as for the StrFind list; comment/uncomment to reflect the one you're using
-' To replace a word with another and highlight it, put the new word in the StrRepl list in the SAME position as the word in the StrFind list you want to replace; comment/uncomment to reflect the one you're using
+' In StrFind and StrRepl, add words between the quote marks. Separate with a comma, no spaces.
+' To replace a word with another and highlight it, put the new word in the StrRepl list in the same position as the word in the StrFind list you want to replace. Make sure you uncomment the StrRepl line if you do this.
 
-StrFind = "minutes,seconds,hours,days,weeks,months,years,percent,inches"
+StrFind = "minutes,seconds,hours,days,weeks,months,years,percent,inches,>,<,=,+,±,−,×,≥,≤"
 StrRepl = StrFind
-' StrRepl = "minutes,seconds,hours,days,weeks,months,years,percent,inches"
+' StrRepl = "minutes,seconds,hours,days,weeks,months,years,percent,inches,>,<,=,+,±,−,×,≥,≤"
 Set RngTxt = Selection.Range
 
-' Set highlight color - options are listed here: https://docs.microsoft.com/en-us/office/vba/api/word.wdcolorindex
-' main ones are wdYellow, wdTurquoise, wdBrightGreen, wdPink
+' Set highlight color
 Options.DefaultHighlightColorIndex = wdYellow
 
 Selection.HomeKey wdStory
