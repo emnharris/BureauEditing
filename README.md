@@ -15,7 +15,7 @@ The [macro collection](https://github.com/emnharris/BureauEditing/tree/master/ma
 See the collection read-me for more information.
 
 ### Citation Style
-This .XSL style is based on the [2009 BibWord Tool](https://archive.codeplex.com/?p=bibword). Installing it will give users the option to format citations and bibliography references in Word according the the Bureau of Economic Geology reference style.
+This style tool is based on the [2009 BibWord Tool](https://archive.codeplex.com/?p=bibword). Installing the `.XSL` will give users the option to format citations and bibliography references in Word according the the Bureau of Economic Geology reference style.
 
 This tool is currently unable to handle alphabetical sorting of references and should only be used with a modified workflow to accommodate this shortcoming. See the program [read-me](https://github.com/emnharris/BureauEditing/tree/master/citations) for more information.
 
