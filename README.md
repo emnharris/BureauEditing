@@ -14,10 +14,10 @@ The [macro collection](https://github.com/emnharris/BureauEditing/tree/master/ma
 * __Unit Flag.__ Flags units of measure and math symbols.
 * __Blacklist Flag.__ Flags commonly misused phrases.
 
-See the collection read-me for more information.
+See the collection [read-me](https://github.com/emnharris/BureauEditing/blob/master/macros/readme.md) for more information.
 
 ### Bureau Citation Style
-With the help of [2009 BibWord Tool](https://archive.codeplex.com/?p=bibword), users can now install the Bureau of Economic Geology style to use with Word's Citation and Bibliography tools.
+With the help of [BibWord](https://archive.codeplex.com/?p=bibword), users can now install the Bureau of Economic Geology style to use with Word's Citation and Bibliography tools.
 
 This tool is currently unable to handle alphabetical sorting of references and should only be used with a modified workflow to accommodate this shortcoming. See the program [read-me](https://github.com/emnharris/BureauEditing/tree/master/citations) for more information.
 
