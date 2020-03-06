@@ -1,4 +1,6 @@
-# BureauEditing
+![Bureau of Economic Geology logo](https://i.ibb.co/t2RWGkp/Screen-Shot-2016-07-11-at-3-44-03-PM.png)
+
+# Bureau Editing Resources
 ## Introduction
 This repository is a collection of automated tools for accomplishing editorial tasks. These tools have been written to follow the editorial styling of the Bureau of Economic Geology.
 
@@ -14,12 +16,12 @@ The [macro collection](https://github.com/emnharris/BureauEditing/tree/master/ma
 
 See the collection read-me for more information.
 
-### Citation Style
-This style tool is based on the [2009 BibWord Tool](https://archive.codeplex.com/?p=bibword). Installing the `.XSL` will give users the option to format citations and bibliography references in Word according the the Bureau of Economic Geology reference style.
+### Bureau Citation Style
+With the help of [2009 BibWord Tool](https://archive.codeplex.com/?p=bibword), users can now install the Bureau of Economic Geology style to use with Word's Citation and Bibliography tools.
 
 This tool is currently unable to handle alphabetical sorting of references and should only be used with a modified workflow to accommodate this shortcoming. See the program [read-me](https://github.com/emnharris/BureauEditing/tree/master/citations) for more information.
 
 ## Future Goals
-* AutoCorrect and Find-Replace `.VBA` tools
-* alphabetization for bibliographies
-* year extensions for bibliographies
+* AutoCorrect and Find-Replace `.VBA` tools (Macros)
+* alphabetization for bibliographies (Bureau Citation Style)
+* year extensions for bibliographies (Bureau Citation Style)
