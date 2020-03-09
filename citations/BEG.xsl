@@ -36,9 +36,7 @@
       <description>An implementation of the Bureau of Economic Geology reference style corresponding with Style Guide updated 2020.02.</description>
       <URL></URL>
       <auhtor>Emily Harris (emily.harris@beg.utexas.edu)</auhtor>
-      <comment>
-        Style based on EndNote JAMA style specification.
-      </comment>
+      <comment></comment>
       <display_errors>yes</display_errors>
       <citation_as_link>yes</citation_as_link>
     </general>
@@ -54,11 +52,13 @@
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
       <source type="BookSection">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Author/b:Editor/b:NameList</b:ImportantField>
         <b:ImportantField>b:Author/b:Translator/b:NameList</b:ImportantField>
+        <b:ImportantField>b:BookAuthor/b:BookAuthor/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:BookTitle</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
@@ -68,30 +68,30 @@
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:PeriodicalTitle</b:ImportantField>
-        <b:ImportantField>b:Day</b:ImportantField>
-        <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Volume</b:ImportantField>
         <b:ImportantField>b:Issue</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
       <source type="JournalArticle">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:JournalName</b:ImportantField>
-        <b:ImportantField>b:Day</b:ImportantField>
-        <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Volume</b:ImportantField>
         <b:ImportantField>b:Issue</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
       <source type="ConferenceProceedings">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -103,17 +103,19 @@
         <b:ImportantField>b:CountryRegion</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
       </source>
       <source type="Report">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
-        <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:Institution</b:ImportantField>
-        <b:ImportantField>b:Day</b:ImportantField>
-        <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
-        <b:ImportantField>b:StandardNumber</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:ShortTitle</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
       <source type="InternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -127,7 +129,7 @@
         <b:ImportantField>b:URL</b:ImportantField>
         <b:ImportantField>b:DayAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
-        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
       <source type="DocumentFromInternetSite">
         <b:ImportantField>b:Author/b:Director/b:NameList</b:ImportantField>
@@ -140,7 +142,7 @@
         <b:ImportantField>b:URL</b:ImportantField>
         <b:ImportantField>b:DayAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
-        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
       <source type="SoundRecording">
         <b:ImportantField>b:Title</b:ImportantField>
@@ -148,24 +150,33 @@
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
       </source>
-      <source type="Film">
-        <b:ImportantField>b:Author/b:Director/b:NameList</b:ImportantField>
+      <source type="Art">
+        <b:ImportantField>b:Author/b:Artist/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:Medium</b:ImportantField>
-        <b:ImportantField>b:Distributor</b:ImportantField>
+        <b:ImportantField>b:Institution</b:ImportantField>
+        <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Day</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
       <source type="Patent">
         <b:ImportantField>b:Author/b:Inventor/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
+        <b:ImportantField>b:Editor</b:ImportantField>
         <b:ImportantField>b:PatentNumber</b:ImportantField>
         <b:ImportantField>b:Day</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
       <source type="Case">
         <b:ImportantField>b:Title</b:ImportantField>
@@ -175,19 +186,20 @@
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:Court</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
       <source type="Misc">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:Author/b:Editor/b:NameList</b:ImportantField>
         <b:ImportantField>b:PublicationTitle</b:ImportantField>
-        <b:ImportantField>b:Volume</b:ImportantField>
-        <b:ImportantField>b:Edition</b:ImportantField>
-        <b:ImportantField>b:CountryRegion</b:ImportantField>
-        <b:ImportantField>b:City</b:ImportantField>
-        <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
       <source type="Thesis">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -197,50 +209,53 @@
         <b:ImportantField>b:Department</b:ImportantField>
         <b:ImportantField>b:Institution</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
       </source>
     </importantfields>
     <citation>
-      <openbracket></openbracket>
-      <closebracket></closebracket>
-      <separator>, </separator>
+      <openbracket>(</openbracket>
+      <closebracket>)</closebracket>
+      <separator>; </separator>
       <source type="Placeholder">
         <format>{%CitationPrefix%}%RefOrder%{%CitationSuffix%}</format>
       </source>
       <source type="Book">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="BookSection">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="Report">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="InternetSite">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="DocumentFromInternetSite">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="SoundRecording">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
-      <source type="Film">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+      <source type="Art">
+        <format>{%Author:1|Artist:1|"[Anonymous]"%}{, %Year%}</format>
       </source>
       <source type="Patent">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Inventor:1|Author:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="Case">
-        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
+        <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Medium%}{, %Year%}</format>
       </source>
       <source type="Misc">
         <format>{%Author:1|Editor:1|"[Anonymous]"%}{, %Year%}</format>
@@ -262,119 +277,120 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ %Title|ShortTitle%}{ %Edition:o% ed.}{ (vol. %Volume%)}{: %City%}{, %Publisher%}{, %Pages% p.}</format>
+          <format>{%Author:2|Editor:3|Corporate:4|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{ %Edition:o% ed.}{ (vol. %Volume%)}{: %City|Institution%}{, %Publisher%}{, %Comments%}{, %Pages% p}{, doi:%DOI%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="BookSection">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ %Title|ShortTitle%}{, &lt;i&gt;in&lt;/i&gt; %Editor:3%, }{ %Translator%, trans.,}{ %BookTitle%}{ (vol. %Volume%)}{, %Edition:o% ed.}{, p. %Pages%.}</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{, &lt;i&gt;in&lt;/i&gt; %BookAuthor:2|Editor:3%, }{ %Translator%, trans.,}{ %BookTitle%}{ (vol. %Volume%)}{, %Edition:o% ed.}{, p. %Pages%.}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="ArticleInAPeriodical">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ &#8220;%Title|ShortTitle%&#8221;}{: %PeriodicalTitle%, v. %Volume%, no. %Issue%, }{p. %Pages%,}{ doi:%DOI%}{, %URL%}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{: %PeriodicalTitle%, v. %Volume%, no. %Issue%, }{p. %Pages%}{, doi:%DOI%}{, %URL%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="JournalArticle">
         <column id="1">
           <halign>right</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ &#8220;%Title|ShortTitle%&#8221;}{: %PeriodicalTitle%, v. %Volume%, no. %Issue%}{, p. %Pages%}{, doi:%DOI%}{, %URL%}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{: %JournalName%, v. %Volume%, no. %Issue%}{, p. %Pages%}{, doi:%DOI%}{, %URL%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="ConferenceProceedings">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ %Title|ShortTitle%}{: %ConferenceName%,}{{ %Month:s% {%Day%}}, %Year%,}{ v. %Volume%, no. %Issue%,}{ p. %Pages%,}{ doi:%DOI%,}{ %URL%}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{: %ConferenceName%,}{{ %Month:s% {%Day%}}, %Year%,}{ v. %Volume%, no. %Issue%,}{ p. %Pages%,}{ doi:%DOI%,}{ %URL%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="Report">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ %Title|ShortTitle%:}{ %Institution%,}{ %ThesisType%}{, %Pages% p}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{: %Institution|Publisher%,}{ %Comments%}{, %Pages% p}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
+      <!--use for whole website-->
       <source type="InternetSite">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:0%.}{ %Title%.}{ &lt;i&gt;%InternetSiteTitle|ShortTitle%&lt;/i&gt;}{ [%Medium%]}{. {%Month:s% {%Day%, }}%Year%;}{ %Edition%}{:%Comments%}{. Available at: %URL:l%}{. Accessed {%MonthAccessed:s% {%DayAccessed%, }}%YearAccessed%}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %InternetSiteTitle|ShortTitle%}{, %URL%}{ (accessed {%MonthAccessed:s%}{ %DayAccessed%})}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
+      <!--use for single webpage/article-->
       <source type="DocumentFromInternetSite">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:0%.}{ %Title%.}{ In %Editor:1%.}{ &lt;i&gt;%InternetSiteTitle|ShortTitle%&lt;/i&gt;}{. {%Month:s% {%Day%, }}%Year%}{. %URL:l%}{. Accessed {%MonthAccessed:s% {%DayAccessed%, }}%YearAccessed%}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ &#8220;%Title|ShortTitle%&#8221;}{: %InternetSiteTitle|ShortTitle%}{, %URL%}{ (accessed {%MonthAccessed:s%}{ %DayAccessed%})}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="SoundRecording">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Title|ShortTitle%}{ [%Medium%]}{. %City%}{: %Publisher%}{; %Year%}.</format>
+          <format>{Unsupported format}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
-      <source type="Film">
+      <!--use for Maps-->
+      <source type="Art">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Director:0%.}{ %Title|ShortTitle%}{ [%Medium%]}{. %Distributor%}{{. %Month:s% {%Day%}}, %Year%}{, doi:%DOI%}{, %URL%}.</format>
+          <format>{%Author:2|Artist:2%,}{ %Year%,}{ %Title|ShortTitle%: }{%Institution%, }{%Publisher%}{, scale: %Comments%}{, doi:%DOI%}{, %URL%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Artist:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="Patent">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Inventor:2|Author:2%}{; %Publisher%, assignee}{. %Title|ShortTitle%}{. %PatentNumber%}{{. %Month:s% {%Day%}}, %Year%}.</format>
+          <format>{%Inventor:2|Author:2%,}{ %Year%,}{ &#8220;%Title|ShortTitle%&#8221;}{, %Editor%}{: %PatentNumber%}{, doi:%DOI%}{, %URL%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
       <source type="Case">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Title|ShortTitle%}{, %Reporter%}{ %CaseNumber%}{ %AbbreviatedCaseNumber%}{ %Pages::%}{ (%Court|Year%{ %Year})}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{, case no. %CaseNumber%}{, %Comments%}{, %Pages% p}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
+      <!--use for Theses/Dissertations-->
       <source type="Misc">
         <column id="1">
-          <halign>right</halign>
-          <valign>top</valign>
-          <format>%RefOrder%.</format>
-        </column>
-        <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:0%}{. %Title|ShortTitle%}{. In %Editor:1%}{ %Translator%, trans}{. &lt;i&gt;%PublicationTitle&lt;/i&gt; }{. Vol %Volume%}{. %Edition% ed}{. {%Country% }%City%}{: %Publisher%}{; %Year%}{:%Pages%}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%}{: %Institution%,}{ %Comments%}{, %Pages% p}{, doi:%DOI%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
+      <!-->
       <source type="Thesis">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|"[Anonymous]"%.}{, %Year%,}{ %Title|ShortTitle%:}{ %Institution%,}{ %ThesisType%}{, %Pages% p}.</format>
+          <format>{%Author:2|Editor:3|"[Anonymous]"%}{, %Year%,}{ %Title|ShortTitle%:}{ %Institution%,}{ %ThesisType%}{, %Pages% p}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:0|Editor:0%}{%Year%}</sortkey>
       </source>
+      <-->
     </bibliography>
     <namelists>
       <list name="sort" id="0">
@@ -411,8 +427,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
-        <first_person>{%Last|First%}{, %First:aps%}{ %Middle:aps%}</first_person>
-        <other_persons>{%Last|First%}{, %First:aps%}{ %Middle:aps%}</other_persons>
+        <first_person>{%Last|First%}{, %First:daps%}{ %Middle:daps%}</first_person>
+        <other_persons>{%Last|First%}{, %First:daps%}{ %Middle:daps%}</other_persons>
         <separator_between_if_two>, and </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, and </separator_before_last>
@@ -426,8 +442,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
-        <first_person>{%Last|First%}{ %First:aps%}{%Middle:aps%}</first_person>
-        <other_persons>{%Last|First%}{ %First:aps%}{%Middle:aps%}</other_persons>
+        <first_person>{%Last|First%}{, %First:daps%}{%Middle:daps%}</first_person>
+        <other_persons>{%Last|First%}{, %First:daps%}{%Middle:daps%}</other_persons>
         <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, </separator_before_last>
@@ -436,6 +452,19 @@
         <overflow>, and others</overflow>
         <single_suffix>, ed.</single_suffix>
         <multi_suffix>, eds.</multi_suffix>
+      </list>
+      <list name="corporation" id="4">
+        <single_prefix></single_prefix>
+        <multi_prefix></multi_prefix>
+        <corporate>{%Corporate%}</corporate>
+        <separator_between_if_two>, </separator_between_if_two>
+        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_before_last>, </separator_before_last>
+        <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
+        <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
+        <overflow>, and others</overflow>
+        <single_suffix></single_suffix>
+        <multi_suffix></multi_suffix>
       </list>
     </namelists>
     <strings>
@@ -1960,6 +1989,7 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:with-param>
+             
               <xsl:with-param name="withPeriods">
                 <xsl:choose>
                   <xsl:when test="contains($options, 'p')">
@@ -1970,6 +2000,7 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:with-param>
+              
               <xsl:with-param name="keepSpaces">
                 <xsl:choose>
                   <xsl:when test="contains($options, 's')">
