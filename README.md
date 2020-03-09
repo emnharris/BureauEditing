@@ -23,5 +23,4 @@ This tool is currently unable to handle alphabetical sorting of references and s
 
 ## Future Goals
 * AutoCorrect and Find-Replace `.VBA` tools (Macros)
-* alphabetization for bibliographies (Bureau Citation Style)
-* year extensions for bibliographies (Bureau Citation Style)
+* year suffixes and author bars for bibliographies (Bureau Citation Style)
