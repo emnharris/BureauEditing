@@ -1,46 +1,51 @@
 # Bureau Citation Style for Microsoft Word
 
 ## About
-Microsoft Word has a tool for adding sources and turning them into citations and bibliographies styled according to several popular stylebooks, including Chicago, APA, and MLA. Unfortunately, these styles do not correspond to the Bureau of Economic Geology's preferred reference style, and there is no Microsoft-supported function for adding a custom style. Currently, the only way to create a custom style for user-specific utilization in Word is to write a custom `.XSL`, or *Extensible Stylesheet Language*, file and save it to the user's application data for Word.
+Microsoft Word has tools for adding reference sources and turning them into citations and bibliographies styled according to several popular stylebooks, including Chicago, APA, and MLA. Unfortunately, these styles do not correspond to the Bureau of Economic Geology's preferred reference style, and there is no Microsoft-supported function for adding a custom style. Currently, the only way to create a custom style for user-specific utilization in Word is to write a custom `.XSL`, or *Extensible Stylesheet Language*, file and save it to the user's application data for Word.
 
-The `.XSL` file in this repository was created with the help of [BibWord](https://github.com/codingo/BibWord) (originally created by [Yves Dhondt](mailto:yves.dhondt@gmail.com), maintained on GitHub by [@codingo](https://github.com/codingo)).
+The `.XSL` file in this repository was created with the help of [BibWord](https://github.com/codingo/BibWord) (originally created by [Yves Dhondt](mailto:yves.dhondt@gmail.com), maintained on GitHub by [Michael Skelton](https://github.com/codingo)).
 
 The installation process, current product status, and further resources are listed below.
 
 ## Installation
-Download the `.XSL` file. Determine where Microsoft Word's program files are stored on your computer, and navigate to the \Bibliography directory, then the \Style directory.
+Download the `.XSL` file in this repository folder. Determine where Microsoft Word's program files are stored on your computer, and navigate to the \Bibliography directory, then the \Style directory.
 
-**Example file path:** *This PC > Windows (C:) > User > AppData > Roaming > Microsoft > Bibliography > Style*
+**64-bit example file path:** *This PC\Windows (C:)\User\AppData\Roaming\Microsoft\Bibliography\Style*
 
 ❗ Note that if you don't have *View > Hidden Items* enabled, you will not be able to see hidden folders such as \AppData.
 
-You will notice several other `.XSL` documents in this location for other styles that come preloaded with Word, such as Chicago, APA, and MLA. Save the file [BEG.xsl](https://github.com/emnharris/BureauEditing/blob/master/citations/BEG.xsl) alongside these other styles. Note that you may need administrator permission on your machine to do this.
+In the \Style directory, you will notice several other `.XSL` documents for other styles that come preloaded with Word, such as Chicago, APA, and MLA. Save the file [BEG.xsl](https://github.com/emnharris/BureauEditing/blob/master/citations/BEG.xsl) alongside these other styles. Note that you may need administrator permission on your machine to do this.
 
-If you have Word open already, close it and restart the program to load the Bureau style option. The style should appear as the option "Bureau of Economic Geology (First Edition)" unless you change the stylename element in the `.XSL` to something else.
+If you have Word open already, close it and restart the program to load the Bureau style option. The style should appear as the option "Bureau of Economic Geology (First Edition)" unless you change the `<stylename>` element in the `.XSL` to something else.
 
-If you come across an issue in this process, try consulting the [BibWord](https://github.com/codingo/BibWord) repository for more in-depth installation instructions.
+If you come across an issue in this process, try consulting the [BibWord](https://github.com/codingo/BibWord) repository for more in-depth installation instructions and troubleshooting. If you find an issue with my files, feel free to raise an issue on GitHub.
 
 ## Current Status
-Currently, this `.XSL` file is not programmed to deliver the capability of replacing repeat author names with bars or applying character suffixes to multiple instances of same author, same year. I'm working on creating the proper extension element to add this functionality. In the meantime, if you wish to use this style, consider using the following workflow:
+Right now, this `.XSL` file is not programmed to deliver the capability of replacing repeat author names with bars (e.g., ⸻, 2015) or applying character suffixes to multiple instances of same author, same year (e.g., 2015a). I'm currently troubleshooting an extension that will add this functionality. In the meantime, if you wish to use this style, consider using the following workflow:
 
 ### Alternate Workflow
-Import sources and use citations as normal. Once a document is finalized and should not go through further editing or source adding, select the autogenerated bibliography so the options menu appears. Select the small drop-down button on the left, then select *Convert Bibliography to Static Text*.
+Import sources and use citations as normal. Once a document is finalized and should not go through further editing or source adding, open your Word document and select the autogenerated bibliography so that the *Options* menu appears. Select the small drop-down button on the left, then select *Convert Bibliography to Static Text*.
 
-❗ Note that while this will allow you to add year suffixes (e.g., 2015a) and add bars for repeat authors (e.g., ⸻, 2015), it will also break the connection between the bibliography and the inline citations. If you have added year suffixes, you will have to manually search for and change the accompanying citations.
+❗ Note that while this will allow you to add year suffixes (e.g., 2015a) and add bars for repeat authors (e.g., ⸻, 2015), it will also break the connection between the bibliography and the inline citations, so they will no longer update. If you have added year suffixes, you will have to manually search for and change the accompanying citations.
 
 ## Other Helpful Information
-Remember to place multiple inline citations in chronological order, then alphabetical order. They will not automatically sort, they will appear in the order you place the citations within the Citation field.
+If you aren't familiar with Word's Citation and Reference tools, [here is a helpful guide](https://support.office.com/en-us/article/add-citations-in-a-word-document-ab9322bb-a8d3-47f4-80c8-63c06779f127).
+
+Remember to place multiple inline citations in chronological order, then alphabetical order (e.g., [Scanlon, 2006; Able, 2011; Reedy, 2011]. The Bureau style will not automatically sort these, they will appear in the order you place the citations within the Citation field.
+
+If you want to change the look of the autogenerated bibliography, change the bibliography style in the *Style* panel, otherwise any formatting changes you make by directly selecting the text will be overwritten everytime you select *Update Citations and Bibliography*.
 
 ### Choosing the Right Source
 Microsoft Word only supports certain medium types for Citations which cannot be renamed using XSL markup. Therefore, to use certain commonly used publication types, you may have to choose a type from Word's drop-down menu that is a different medium.
 
-* If you would like to cite an *Abstract*, there is no dedicated type; use *Book* or *Journal* and simply type (abs.) after the title.
+* If you would like to cite an **Abstract**, there is no dedicated type; use *Book* or *Journal* and simply type (abs.) after the title.
 
-* If you would like to cite a *Thesis*, use the *Misc.* type.
+* If you would like to cite a **Thesis**, use the *Misc.* type.
    * Put whether the source is a Master's thesis or a Ph.D. dissertation in the *Comment* field.
 
-* If you would like to cite a *Map*, use the *Art* type.
-   * Do not list *Medium* type as map; this field is used for sponsor information because Word currently has no sponsor field.
+* If you would like to cite a **Map**, use the *Art* type.
+   * Do not list *Medium* type as map; this field is used for denoting whether something is oral/written communication or unpublished data, and this information will appear in the inline citation (e.g., [Moody, unpub data, 1988]).
+   * Put the map scale in the *Comments* field and it will be formatted properly.
 
 ### Choosing the Right Citation Field
 Microsoft Word only supports certain information fields for Citations which cannot be renamed using XSL markup. Take note of the following citations to avoid errors in your citation.
@@ -49,10 +54,7 @@ Microsoft Word only supports certain information fields for Citations which cann
   * oral commun.
   * written commun.
   * unpub. data
-* If your citation is in press, type "in press" in the *Year* field.
-* If your citation is a sponsored project, type the sponsor information in the *Comments* field.
-* If you are citing a *Patent*, list the patent office (e.g., U.S. Patent Office) as the *Editor*.
-* If you are citing a special kind of *Book* (e.g., field guidebook), list special information in *Comments* and it will appear after the publisher and before the page count.
-
-
-If you aren't familiar with citation and reference tools in Word, [here is a helpful guide](https://support.office.com/en-us/article/add-citations-in-a-word-document-ab9322bb-a8d3-47f4-80c8-63c06779f127).
+* If your citation is **in press**, type "in press" in the *Year* field.
+* If your citation is a **sponsored project**, type the sponsor information in the *Comments* field.
+* If you are citing a **Patent**, list the patent office (e.g., U.S. Patent Office) as the *Editor*, and make sure the whole office is typed in just one of the name fields (e.g., First or Last), otherwise it will be abbreviated.
+* If you are citing a **special kind of Book** (e.g., field guidebook, abstract volume), list special descriptive information in *Comments* and it will appear after the publisher and before the page count.
