@@ -21,6 +21,9 @@ With the help of [BibWord](https://archive.codeplex.com/?p=bibword), users can n
 
 This tool is currently unable to handle alphabetical sorting of references and should only be used with a modified workflow to accommodate this shortcoming. See the program [read-me](https://github.com/emnharris/BureauEditing/tree/master/citations) for more information.
 
+## Tips
+If you would like to edit any of these tools, it helps to have a good plain-text editor. Notepad will allow you to write in plain text, but it's not always easy saving documents with extensions other than `.TXT`. I recommend getting a good text editor like [Visual Studio Code](https://code.visualstudio.com/), which has the added benefit of color formatting to go with whatever file extension you're using.
+
 ## Future Goals
 * AutoCorrect and Find-Replace `.VBA` tools (Macros)
 * year suffixes and author bars for bibliographies (Bureau Citation Style)
